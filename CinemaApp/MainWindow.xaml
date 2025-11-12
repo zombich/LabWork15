@@ -1,0 +1,17 @@
+﻿<Window x:Class="CinemaApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CinemaApp"
+        mc:Ignorable="d"
+        Title="Регистрация" Height="450" Width="800">
+    <StackPanel>
+        <Label>Логин</Label>
+        <TextBox x:Name="UserLoginTextBox"/>
+        <Label>Пароль</Label>
+        <PasswordBox x:Name="UserPasswordBox"/>
+        <Button x:Name="RegistrationButton" Click="RegistrationButton_Click">Регистрация</Button>
+        <Button x:Name="AuthorizationButton" Click="AuthorizationButton_Click">Авторизация</Button>
+    </StackPanel>
+</Window>

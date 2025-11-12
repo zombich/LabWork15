@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Text.Json.Serialization;
 
-namespace DatabaseLibrary.Models;
+namespace AuthLibrary.Models;
 
 public partial class CinemaUserRole
 {

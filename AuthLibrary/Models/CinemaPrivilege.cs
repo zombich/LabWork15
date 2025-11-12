@@ -1,7 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 
-namespace DatabaseLibrary.Models;
+namespace AuthLibrary.Models;
 
 public partial class CinemaPrivilege
 {

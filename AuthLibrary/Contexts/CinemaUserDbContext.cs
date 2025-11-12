@@ -1,9 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using DatabaseLibrary.Models;
+using AuthLibrary.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace DatabaseLibrary.Contexts;
+namespace AuthLibrary.Contexts;
 
 public partial class CinemaUserDbContext : DbContext
 {
