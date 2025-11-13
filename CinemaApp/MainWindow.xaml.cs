@@ -45,7 +45,14 @@ namespace CinemaApp
             var user = await _authService.AuthUserAsync(login,password);
 
             if (user is not null)
-                MessageBox.Show($"Login - {user.Login}", "Успех!", MessageBoxButton.OK, MessageBoxImage.Information);
+            {
+                UserSession.Instance.SetCurrentUser(user);
+
+                HelloWindow window = new();
+                Hide();
+                window.ShowDialog();
+                Show();
+            }
             else
                 MessageBox.Show("Не удалось авторизироваться", "Ошибка!", MessageBoxButton.OK, MessageBoxImage.Error);
         }
